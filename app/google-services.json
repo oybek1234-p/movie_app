@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "974338860963",
+    "firebase_url": "https://newtaxi-e5c21.firebaseio.com",
+    "project_id": "newtaxi-e5c21",
+    "storage_bucket": "newtaxi-e5c21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974338860963:android:dcc79a04c3f60a855bdc16",
+        "android_client_info": {
+          "package_name": "com.mytaxi.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974338860963-1vob07iico6vlafsaluldb5fb6hit54e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mytaxi.apps",
+            "certificate_hash": "99bad2874cabde250fcd838f90bcac8df4fc8697"
+          }
+        },
+        {
+          "client_id": "974338860963-olvvdcquohjb1lo2hj78fprhjsgkqlpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mytaxi.apps",
+            "certificate_hash": "57bd6d58976aed2d08fbac04e809e6e354baeccf"
+          }
+        },
+        {
+          "client_id": "974338860963-v7v4vm009fcb7re0iaial6ktcpbjkcek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mytaxi.apps",
+            "certificate_hash": "2ffd7ba58acb51fa8dd73b24a810f292db89ea76"
+          }
+        },
+        {
+          "client_id": "974338860963-pmfe5vldlb74k48v8l98sfn0675lnijf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI0hq4pvd4IiEScfUIJrj2Ke-eQA7c3tU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974338860963-pmfe5vldlb74k48v8l98sfn0675lnijf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

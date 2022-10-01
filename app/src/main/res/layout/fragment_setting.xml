@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:ignore="UseCompoundDrawables">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="15dp"
+                    android:text="@string/enable_push"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/setting_text"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:drawableStartCompat="@drawable/ic_baseline_notifications_24"
+                    app:drawableTint="@color/white" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:theme="@style/NotificationSwitch.control" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lytAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="15dp"
+                android:text="@string/about"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/setting_text"
+                android:gravity="center"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_baseline_info_24"
+                app:drawableTint="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/privacy_policy"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/setting_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_baseline_security_24"
+                app:drawableTint="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytRateApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/rate_app"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/setting_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_baseline_star_24"
+                app:drawableTint="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytShareApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/share_app"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/setting_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_baseline_share_24"
+                app:drawableTint="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytMoreApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/more_app"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/setting_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_baseline_apps_24"
+                app:drawableTint="@color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lytLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawablePadding="15dp"
+                android:gravity="center"
+                android:text="@string/menu_logout"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/setting_text"
+                android:textSize="15sp"
+                app:drawableStartCompat="@drawable/ic_logout"
+                app:drawableTint="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

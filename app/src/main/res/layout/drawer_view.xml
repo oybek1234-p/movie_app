@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/photo_view"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:background="@drawable/circle_drawable"
+        android:backgroundTint="#43D5D5D5"
+        android:layout_margin="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_view"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        tools:text="James Robert"
+        android:layout_marginStart="18dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_profile"
+        android:drawableStart="@drawable/edit_ic"
+        android:drawableTint="@color/gray"
+        android:text="Edit"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        android:layout_marginTop="12dp"
+        android:drawablePadding="18dp"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="18dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#599C9C9C"
+        android:layout_marginTop="12dp"
+        />
+
+
+</LinearLayout>

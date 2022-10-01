@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/menu_go_tv"
+        android:icon="@drawable/ic_live_tv"
+        android:title="@string/menu_tv"
+        app:iconTint="@color/white"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_go_sport"
+        android:icon="@drawable/ic_sport"
+        android:title="@string/menu_sport"
+        app:iconTint="@color/white"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_dark_theme"
+        android:icon="@drawable/ic_baseline_nights_stay_24"
+        android:title="@string/menu_dark_theme"
+        app:iconTint="@color/white"
+        app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="2"
+        android:title="@string/menu_search"
+        app:iconTint="@color/white"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+</menu>

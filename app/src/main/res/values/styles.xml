@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
+    </style>
+
+    <style name="NotificationSwitch.control" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/highlight</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/white</item>
+    </style>
+
+    <style name="MyRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="buttonTint">@drawable/radio_button</item>
+    </style>
+
+    <style name="MyRadioButtonStyleSub" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="buttonTint">@drawable/sub_title_radio_button</item>
+    </style>
+
+    <style name="tabText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/custom</item>
+        <item name="android:tabStripEnabled">false</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="Theme.CastVideosDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+        <item name="castIntroOverlayStyle">@style/CustomCastIntroOverlay</item>
+        <item name="castExpandedControllerStyle">@style/CustomCastExpandedController</item>
+        <item name="castExpandedControllerToolbarStyle">
+            @style/ThemeOverlay.AppCompat.Dark.ActionBar
+        </item>
+    </style>
+
+    <style name="CustomCastIntroOverlay" parent="CastIntroOverlay">
+        <item name="castButtonTextAppearance">@style/TextAppearance.CustomCastIntroOverlay.Button
+        </item>
+        <item name="castTitleTextAppearance">@style/TextAppearance.CustomCastIntroOverlay.Title
+        </item>
+    </style>
+
+    <style name="TextAppearance.CustomCastIntroOverlay.Button" parent="android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextAppearance.CustomCastIntroOverlay.Title" parent="android:style/TextAppearance.Large">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomCastMiniController" parent="CastMiniController">
+        <item name="castShowImageThumbnail">true</item>
+        <item name="castTitleTextAppearance">@style/TextAppearance.AppCompat.Subhead</item>
+        <item name="castSubtitleTextAppearance">@style/TextAppearance.AppCompat.Caption</item>
+    </style>
+
+    <style name="CustomCastExpandedController" parent="CastExpandedController" />
+
+    <!-- ToolBar -->
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!-- Toolbar text size -->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="android:background">@color/bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="colorAccent">@color/highlight</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/highlight</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/highlight</item>
+    </style>
+
+    <style name="FlutterwaveTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/white</item>
+        <item name="OTPButtonStyle">@style/otpBtnStyle</item>
+        <item name="PayButtonStyle">@style/payBtnStyle</item>
+        <item name="PinButtonStyle">@style/pinButtonStyle</item>
+        <item name="OTPHeaderStyle">@style/otpHeaderStyle</item>
+        <item name="TabLayoutStyle">@style/tabLayoutStyle</item>
+        <item name="PinHeaderStyle">@style/pinHeaderStyle</item>
+        <item name="SavedCardButtonStyle">@style/svdCardsBtnStyle</item>
+    </style>
+
+</resources>

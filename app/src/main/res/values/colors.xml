@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#343434</color>
+    <color name="colorPrimaryDark">#2a2a2a</color>
+    <color name="colorAccent">#ff0532</color>
+
+    <color name="highlight">#ff0532</color>
+    <color name="faded_highlight">#40ff0532</color>
+    <color name="highlight2">#4a95c2</color>
+    <color name="bg">#FFF</color>
+    <color name="white">#111820</color> <!-- TEXT COLOR -->
+    <color name="black">#000000</color>
+    <color name="maingray">#7f8a98</color>
+    <color name="highlight_gray">#1c242b</color>
+    <color name="tab_gray">#FFF</color>
+    <color name="black_1">#000000</color>
+    <color name="whit_1">#FFFFFF</color>
+    <color name="text">@color/white</color>
+    <color name="text_sub">@color/white</color>
+
+    <color name="home_header_text">#1c242b</color>
+    <color name="tab_select">@color/highlight</color>
+    <color name="transparent">#00000000</color>
+
+    <!--Navigation Drawer -->
+    <color name="navigation_default">@color/white</color>
+    <color name="navigation_checked">@color/highlight</color>
+
+    <!--forgot password-->
+    <color name="view_login">#aaaaaa</color>
+    <color name="gray">#9c9c9c</color>
+    <color name="gray_line">#9c9c9c</color>
+
+    <!--privacy policy & about us & setting-->
+    <color name="about_us_Text">#424242</color>
+    <color name="about_us_SubText">#767676</color>
+    <color name="setting_text">@color/white</color>
+    <color name="setting_divider">@color/maingray</color>
+
+    <!-- profile -->
+    <color name="profile_text">@color/white</color>
+    <color name="profile_sub_text">@color/white</color>
+    <color name="profile_divider">#343434</color>
+
+    <!--Genre and Language -->
+    <color name="genre_view_bg">#80000000</color>
+    <color name="genre_view_select_bg">#99ff0532</color>
+
+    <!-- Subscription -->
+    <color name="sub_select_bg">#ececec</color>
+    <color name="sub_normal_bg">#4c4c4c</color>
+    <color name="sub_price_select">#424242</color>
+    <color name="sub_price_normal">#ebebeb</color>
+    <color name="sub_pack_select">#686868</color>
+    <color name="sub_pack_normal">#cacaca</color>
+    <color name="sub_divider">#827e7f</color>
+
+    <!--Language -->
+    <color name="language_bg">@color/bg</color>
+    <color name="filter_divider">#edeff2</color>
+
+    <!--season -->
+    <color name="season_bg">#ffffff</color>
+
+    <!--player setting text -->
+    <color name="prayer_setting_bg">#f7f7f7</color>
+    <color name="player_setting_text">#717171</color>
+
+    <!-- button color -->
+    <color name="btn_text_color">#FFFFFF</color>
+
+    <!-- transparent color -->
+    <color name="transparent_color">#1A333333</color>
+
+    <color name="mainbluebg">#111820</color>
+    <color name="real_white">#FFF</color>
+
+    <!-- not found -->
+    <color name="not_found_color">#717171</color>
+
+    <!-- cards -->
+    <color name="card_color">@color/bg</color>
+
+    <!-- facebook/google login border -->
+    <color name="btn_socmed_login">@color/not_found_color</color>
+
+    <!-- edittext hint -->
+    <color name="edittext_hint">#9c9c9c</color>
+
+    <!-- divider -->
+    <color name="divider">#edeff2</color>
+
+    <!-- divider2 -->
+    <color name="divider2">#0D333333</color>
+
+    <!-- transparent color -->
+    <color name="transparent_bg">#00000000</color>
+</resources>

@@ -1,0 +1,63 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar_main"
+            layout="@layout/cander_row_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/Container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_main">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+            android:id="@+id/expandable_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mbn_backgroundBottomColor="@color/bg"
+            app:mbn_circleColor="@color/highlight"
+            app:mbn_defaultIconColor="@color/gray"
+            app:mbn_selectedIconColor="@color/whit_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/navigation_view"
+        android:layout_width="250dp"
+        layout="@layout/drawer_view"
+        android:layout_gravity="start"
+        android:layout_height="match_parent"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

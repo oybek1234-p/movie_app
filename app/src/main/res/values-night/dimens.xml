@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="btnRadius">5dp</dimen>
+    <dimen name="item_space">8dp</dimen>
+    <dimen name="borderRadius">10dp</dimen>
+</resources>

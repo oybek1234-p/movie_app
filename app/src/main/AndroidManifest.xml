@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mytaxi.apps">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.mytaxi.apps.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name="com.mytaxi.apps.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mytaxi.apps.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.MovieDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.SportDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.ShowDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="com.mytaxi.apps.TVDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.PlanActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="com.mytaxi.apps.SelectPlanActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.SearchHorizontalActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.DashboardActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.mytaxi.apps.PayPalActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mytaxi.apps.RazorPayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mytaxi.apps.FlutterwaveActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mytaxi.apps.StripeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mytaxi.apps.PayStackActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mytaxi.apps.SelcomActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mytaxi.apps.SelcomPayment"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mytaxi.apps.EmbeddedPlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Activity required to show ad overlays. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+            android:value="FFD81B60" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fb191392074808179" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@style/CheckoutTheme"
+            tools:ignore="Instantiatable"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.mytaxi.cast.CastOptionsProvider" />
+
+        <activity
+            android:name="com.mytaxi.cast.ExpandedControlsActivity"
+            android:theme="@style/Theme.CastVideosDark" />
+
+
+        <meta-data
+            android:name="onesignal_app_id"
+            android:value="${onesignal_app_id}" />
+        <!-- Deprecated - Pulled from OneSignal dashboard. -->
+        <meta-data
+            android:name="onesignal_google_project_number"
+            android:value="str:${onesignal_google_project_number}" />
+
+        <receiver
+            android:name="com.onesignal.GcmBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+            <intent-filter android:priority="999" >
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+
+        <service
+            android:name="com.onesignal.HmsMessageServiceOneSignal"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.onesignal.NotificationOpenedActivityHMS"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.onesignal.GcmIntentService" />
+        <service
+            android:name="com.onesignal.GcmIntentJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.onesignal.RestoreJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.onesignal.RestoreKickoffJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.onesignal.SyncService"
+            android:stopWithTask="true" />
+        <service
+            android:name="com.onesignal.SyncJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.onesignal.PermissionsActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service android:name="com.onesignal.NotificationRestoreService" />
+
+        <receiver android:name="com.onesignal.BootUpReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onesignal.UpgradeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/StripeTransparentTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--                 Must match `DefaultReturnUrl#value`. -->
+                <data
+                    android:host="payment_return_url"
+                    android:path="/${applicationId}"
+                    android:scheme="stripesdk" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
